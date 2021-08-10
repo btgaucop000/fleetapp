@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class JobTitleController {
-    @GetMapping("/job-title")
+    @GetMapping("/job-titles")
     public String getJobTitle() {
         return "job-title";
     }

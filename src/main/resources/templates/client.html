@@ -9,7 +9,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Country Management Page</title>
+  <title>Client Management Page</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -400,24 +400,7 @@
           </div>
         </div>
         <!-- page start-->
-          <table class="table">
-              <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Capital</th>
-                  <th>Code</th>
-                  <th>Description</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr th:each="country : ${countries}">
-                  <td th:text="${country.id}"></td>
-                  <td th:text="${country.capital}"></td>
-                  <td th:text="${country.code}"></td>
-                  <td th:text="${country.description}"></td>
-              </tr>
-              </tbody>
-          </table>
+        <h1>List of Clients</h1>
         <!-- page end-->
       </section>
     </section>
