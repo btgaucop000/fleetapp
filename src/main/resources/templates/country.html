@@ -69,6 +69,7 @@
                       <td>
                           <div class="btn-group">
                             <a th:href="@{/countries/get/(id=${country.id})}" class="btn btn-primary" id="edit-button">Edit</a>
+                            <a th:href="@{/countries/delete/(id=${country.id})}" class="btn btn-danger" id="delete-button">Delete</a>
                           </div>
                       </td>
                   </tr>
@@ -88,7 +89,6 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
           -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
     </div>
   </section>
@@ -175,6 +175,26 @@
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="delete-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirm Delete</h5>
+          <button type="button" style="margin-top: -25px;" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete this record?</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" id="confirm-button">Ok</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>

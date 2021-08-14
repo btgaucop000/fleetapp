@@ -17,4 +17,15 @@ $('document').ready(function() {
 
         $('#edit-modal').modal();
     });
+
+    $('table #delete-button').on('click', function(event) {
+        
+        event.preventDefault();
+
+        var href = $(this).attr('href');
+
+        $('#confirm-button').attr('href', href);
+        
+        $('#delete-modal').modal();
+    });
 });
