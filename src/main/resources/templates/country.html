@@ -68,8 +68,9 @@
                       <td th:text="${country.description}"></td>
                       <td>
                           <div class="btn-group">
-                            <a th:href="@{/countries/get/(id=${country.id})}" class="btn btn-primary" id="edit-button">Edit</a>
-                            <a th:href="@{/countries/delete/(id=${country.id})}" class="btn btn-danger" id="delete-button">Delete</a>
+                            <a th:href="@{/countries/get/(id=${country.id})}" style="margin-right: 5px;" class="btn btn-primary" id="edit-button"><i class="icon_pencil-edit"></i></a>
+                            <a style="margin-right: 5px;" class="btn btn-success" id="detail-button"><i class="icon_document_alt"></i></a>
+                            <a th:href="@{/countries/delete/(id=${country.id})}" class="btn btn-danger" id="delete-button"><i class="icon_close_alt2"></i></a>
                           </div>
                       </td>
                   </tr>
@@ -81,16 +82,6 @@
       </section>
     </section>
     <!--main content end-->
-    <div class="text-right">
-      <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
-        </div>
-    </div>
   </section>
   <!-- container section end -->
 

@@ -6,7 +6,7 @@ $('document').ready(function() {
         
         var href = $(this).attr('href')
 
-        $.get(href, function (country, status) {
+        $.get(href, function (country) {
             $('#id-edit').val(country.id);
             $('#capital-edit').val(country.capital);
             $('#code-edit').val(country.code);
